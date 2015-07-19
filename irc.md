@@ -43,7 +43,9 @@ SHA1 Fingerprint: D0:9F:2C:38:61:6D:82:7E:6F:17:C4:4D:14:9D:99:3E:E2:3D:11:EE [(
 Host: irc.firebird.io \\
 Ports: 6667, 6697 (SSL) \\
 Admin: firebird \\
-SHA1 Fingerprint: F8:0C:E0:EC:11:D0:6B:9A:A4:A9:BA:65:01:31:57:F6:66:2F:F3:60 [(Zertifikat)](https://firebird.io/certificate.pem)
+SHA1 Fingerprint: F0:E2:2F:33:BC:D7:C7:D1:15:B8:57:30:8E:A5:1B:59:00:29:F2:84
+SHA256 Fingerprint: AF:6B:F7:CF:DD:4E:BC:E7:3A:4C:F9:CC:30:25:45:FE:69:A1:F2:35:32:A1:52:3A:A1:18:09:86:2B:EA:AC:54
+[(Zertifikat)](https://firebird.io/certificate.pem)
 
 ## Map
 
