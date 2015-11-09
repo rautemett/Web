@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>IRC</title>
+	<meta name="description" content="Der rohe, fleischige Teil des Internets
+">
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="https://ircmett.de/irc/">
+	<link rel="alternate" type="application/rss+xml" title="#mettWiki" href="https://ircmett.de/feed.xml" />
+</head>
+
+
+	<body>
+
+		<div id="dokuwiki__site">
+			<div id="dokuwiki__top" class="site dokuwiki mode_show tpl_dokuwiki home">
+				<div id="dokuwiki__header">
+	<div class="pad group">
+		<div class="headings group">
+			<h1>
+				<a href="/" accesskey="h" title="[H]"><img src="/assets/wiki_logo.png" width="64" height="64" alt="" />
+					<span>#mettWiki</span>
+				</a>
+			</h1>
+			<p class="claim">Der rohe, fleischige Teil des Internets</p>
+		</div>
+		<hr class="ally">
+	</div>
+</div>
+
+
+				<div class="wrapper group">
+					<div id="dokuwiki__content">
+						<div class="pad group">
+							<div class="page group">
+
+  <h1>IRC</h1>
+
+  <p>mettBot: <a href="http://github.com/Ro0mquy/MettBot">github</a> <br />
+Log seit immer™: Komm doch lieber in den Channel <br />
+<!-- #mett Stats: [mett.html (mett/salami)](https://mett:salami@excalibur.h4ndi.de/~hendrik/ircstats/mett.html) --></p>
+
+<h2 id="server">Server</h2>
+
+<h3 id="ircthw23de">irc.thw23.de</h3>
+
+<p>Host: irc.thw23.de <br />
+Ports: 2342, 4223 (SSL) <br />
+Admins: samohT, izibi <br />
+SHA1 Fingerprint: 35:DB:AA:EB:4C:B3:6A:2C:2F:8B:CF:3F:71:FC:14:2A:84:B7:7B:2A <a href="https://julian.taurus.uberspace.de/ircmett/certs/irc.thw23.de.pem">(Zertifikat)</a></p>
+
+<h3 id="irckurzpw">irc.kurz.pw</h3>
+
+<p>Host: irc.kurz.pw <br />
+Ports: 6667, 6697 (SSL) <br />
+Admins: lukas2511, izibi <br />
+SHA1 Fingerprint: E4:52:39:34:A9:07:8B:6A:B3:6D:BA:CB:7D:B9:8C:E9:BF:02:A5:ED <a href="https://julian.taurus.uberspace.de/ircmett/certs/trollkampf.luma-hosting.de.pem">(Zertifikat)</a></p>
+
+<h3 id="ircps0kede">irc.ps0ke.de</h3>
+
+<p>Host: irc.ps0ke.de <br />
+Ports: 2342 <br />
+Admin: Ps0ke <br />
+SHA1 Fingerprint: 21:92:EB:6B:DC:40:DD:07:C8:C5:56:81:25:06:87:02:02:FC:75:17 <a href="https://julian.taurus.uberspace.de/ircmett/certs/irc.ps0ke.de.pem">(Zertifikat)</a></p>
+
+<h3 id="irc0x4a42net">irc.0x4a42.net</h3>
+
+<p>Host: irc.0x4a42.net <br />
+Ports: 6667, 2342, 6697 (SSL), 4223 (SSL) <br />
+Admin: izibi <br />
+SHA1 Fingerprint: D0:9F:2C:38:61:6D:82:7E:6F:17:C4:4D:14:9D:99:3E:E2:3D:11:EE <a href="https://julian.taurus.uberspace.de/ircmett/certs/irc.0x4a42.net.pem">(Zertifikat)</a></p>
+
+<h3 id="ircfirebirdio">irc.firebird.io</h3>
+
+<p>Host: irc.firebird.io <br />
+Ports: 6667, 6697 (SSL) <br />
+Admin: firebird <br />
+SHA1 Fingerprint: F0:E2:2F:33:BC:D7:C7:D1:15:B8:57:30:8E:A5:1B:59:00:29:F2:84 <br />
+SHA256 Fingerprint: AF:6B:F7:CF:DD:4E:BC:E7:3A:4C:F9:CC:30:25:45:FE:69:A1:F2:35:32:A1:52:3A:A1:18:09:86:2B:EA:AC:54
+<a href="https://firebird.io/certificate.pem">(Zertifikat)</a></p>
+
+<h2 id="map">Map</h2>
+
+<p><img src="https://julian.taurus.uberspace.de/ircmett/map.png" alt="IRCMap" /></p>
+
+<p>(<a href="https://julian.taurus.uberspace.de/ircmett/map.txt">ASCII-Version</a>)</p>
+
+<h2 id="irssi">irssi</h2>
+
+<div class="highlight"><pre><code class="language-irc" data-lang="irc">/network add IRCmett
+/server add -network IRCmett -ssl ssl.ircmett.de 4223
+/channel add -auto #mett IRCmett
+/connect IRCmett</code></pre></div>
+
+<h2 id="server-config">Server Config</h2>
+
+<div class="highlight"><pre><code class="language-ini" data-lang="ini"><span class="k">[Global]</span>
+<span class="na">Name</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">AdminInfo1</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">AdminInfo2</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">AdminEMail</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">Info</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">MotdFile</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">Ports</span> <span class="o">=</span> <span class="s">...</span>
+
+<span class="k">[SSL]</span>
+<span class="na">CertFile</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">DHFile</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">KeyFile</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">KeyFilePassword</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">Ports</span> <span class="o">=</span> <span class="s">...</span>
+
+<span class="k">[Limits]</span>
+<span class="na">ConnectRetry</span> <span class="o">=</span> <span class="s">60</span>
+<span class="na">MaxConnections</span> <span class="o">=</span> <span class="s">0</span>
+<span class="na">MaxConnectionsIP</span> <span class="o">=</span> <span class="s">5</span>
+<span class="na">MaxNickLength</span> <span class="o">=</span> <span class="s">15</span>
+<span class="na">PingTimeout</span> <span class="o">=</span> <span class="s">120</span>
+<span class="na">PongTimeout</span> <span class="o">=</span> <span class="s">120</span>
+
+<span class="k">[Options]</span>
+<span class="na">AllowRemoteOper</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="na">ConnectIPv6</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="na">ConnectIPv4</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="na">DNS</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="na">Ident</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="na">NoticeAuth</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="na">OperCanUseMode</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="na">OperChanPAutoOp</span> <span class="o">=</span> <span class="s">yes</span>
+
+<span class="k">[Operator]</span>
+<span class="na">Name</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">Password</span> <span class="o">=</span> <span class="s">...</span>
+
+<span class="k">[Server]</span>
+<span class="na">Name</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">Host</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">Port</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">MyPassword</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">PeerPassword</span> <span class="o">=</span> <span class="s">...</span>
+<span class="na">SSLConnect</span> <span class="o">=</span> <span class="s">yes</span></code></pre></div>
+
+
+</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div id="dokuwiki__footer">
+	<div class="pad">
+		<div class="buttons">
+			<a href="https://ircmett.de">
+				<img src="/assets/button-mett.png" width="80" height="15" alt="Mett">
+			</a>
+		</div>
+	</div>
+</div>
+
+			</div>
+		</div>
+		<hr class="ally">
+
+	<script type="text/javascript">
+	(function() {
+		var links = document.links;
+		for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+			if (links[i].hostname != window.location.hostname && links[i].hostname != "ircmett.de") {
+				links[i].target = '_blank';
+				links[i].className += ' urlextern';
+			}
+		}
+	})();
+	</script>
+
+	</body>
+
+</html>
