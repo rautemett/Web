@@ -1,0 +1,11 @@
+pages:
+  script:
+  - tar cf public.tar *
+  - mkdir public
+  - tar xf public.tar -C public
+  artifacts:
+    paths:
+    - public
+  only:
+  - gh-pages
+
